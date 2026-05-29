@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DentalPress Excelência | Onde os Melhores se Encontram</title>
+    <meta name="description" content="Conheça o ecossistema Excelência. A educação continuada definitiva em Ortodontia, DTM, Alinhadores e Prática Multidisciplinar.">
+    
+    <!-- Google Fonts: Playfair Display & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Three.js and OrbitControls via CDN for WebGL 3D Model -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+    <!-- WebGL Background Canvas -->
+    <canvas id="webgl-canvas"></canvas>
+
+    <!-- Custom Luxury Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-follower"></div>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo-link">
+                <img src="assets/logo/DentalPressNewLogoBlancMini.png" alt="DentalPress Logo" class="logo-img">
+            </a>
+            <nav class="nav-menu">
+                <a href="#hero" class="nav-item">Início</a>
+                <a href="#cursos" class="nav-item">Formações</a>
+                <a href="#autoridade" class="nav-item">A Assinatura</a>
+                <a href="#docentes" class="nav-item">Corpo Docente</a>
+                <a href="#depoimentos" class="nav-item">Experiências</a>
+                <a href="#aplicacao" class="btn btn-secondary btn-apply nav-btn">Aplicar para Vaga</a>
+            </nav>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section 1: Hero Cinematográfico -->
+    <section id="hero" class="hero-section">
+        <div class="hero-video-container">
+            <video autoplay loop muted playsinline class="hero-video">
+                <source src="assets/video/b_b_a_c_f_videomp_.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <span class="hero-tagline scroll-reveal">ECOSSISTEMA EXCELÊNCIA</span>
+            <h1 class="hero-title scroll-reveal">A Odontologia Elevada ao Seu Estado da Arte.</h1>
+            <p class="hero-subtitle scroll-reveal">A educação continuada definitiva em Ortodontia, DTM, Alinhadores e Prática Multidisciplinar.</p>
+            <div class="hero-actions scroll-reveal">
+                <a href="#cursos" class="btn btn-primary magnetic-btn">Explore as Formações</a>
+                <a href="#aplicacao" class="btn btn-outline magnetic-btn">Lista de Espera</a>
+            </div>
+        </div>
+        <div class="scroll-down-indicator">
+            <span class="mouse-icon"><span class="mouse-wheel"></span></span>
+            <span class="scroll-text">Deslize para explorar</span>
+        </div>
+    </section>
+
+    <!-- Section 2: Bento Grid Ecossistema de Cursos -->
+    <section id="cursos" class="cursos-section">
+        <div class="section-container">
+            <div class="section-header scroll-reveal">
+                <h2 class="section-title">O Ecossistema de Cursos</h2>
+                <p class="section-subtitle">Três pilares de excelência clínica projetados para transformar sua carreira.</p>
+            </div>
+            
+            <div class="bento-grid">
+                <!-- Card 1: Excelência na Orto (Clássico) -->
+                <div class="bento-card card-orto scroll-reveal" data-course="orto">
+                    <div class="card-bg-overlay"></div>
+                    <div class="card-content">
+                        <span class="card-tag">ORTODONTIA</span>
+                        <h3 class="card-title">Excelência na Orto</h3>
+                        <p class="card-description">O clássico absoluto. Foco na tradição, biomecânica avançada, diagnóstico preciso e maestria clínica.</p>
+                        <ul class="card-features">
+                            <li><i class="fa-solid fa-check"></i> Biomecânica de Alta Performance</li>
+                            <li><i class="fa-solid fa-check"></i> Filosofia Consagrada e Inovações</li>
+                            <li><i class="fa-solid fa-check"></i> Imersão Prática & Presencial</li>
+                        </ul>
+                        <button class="btn btn-card-action">Conhecer Formação <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Card 2: Excelência em DTM e Alinhadores (A Tecnologia) -->
+                <div class="bento-card card-dtm scroll-reveal" data-course="dtm">
+                    <div class="card-bg-overlay"></div>
+                    <div class="card-content">
+                        <span class="card-tag">TECNOLOGIA</span>
+                        <h3 class="card-title">Excelência em DTM e Alinhadores</h3>
+                        <p class="card-description">O futuro digital hoje. Foco no fluxo digital, precisão de alinhadores modernos e controle da disfunção temporomandibular.</p>
+                        <ul class="card-features">
+                            <li><i class="fa-solid fa-check"></i> Protocolos Digitais Completos</li>
+                            <li><i class="fa-solid fa-check"></i> Planejamento 3D Tridimensional</li>
+                            <li><i class="fa-solid fa-check"></i> Tratamento Integral de DTM</li>
+                        </ul>
+                        <button class="btn btn-card-action">Conhecer Formação <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Card 3: Excelência Com Elas (A Inovação - Destaque Principal) -->
+                <div class="bento-card card-elas scroll-reveal" data-course="elas">
+                    <div class="card-bg-overlay"></div>
+                    <div class="card-content">
+                        <span class="card-tag tag-rose">EXCLUSIVO & INOVADOR</span>
+                        <h3 class="card-title text-rose">Excelência Com Elas</h3>
+                        <p class="card-description">O encontro da odontologia de elite com a liderança e sensibilidade feminina. Multidisciplinaridade de ponta, visão integral do paciente e gestão clínica estratégica ministrada pelo corpo docente feminino de referência nacional.</p>
+                        
+                        <div class="elas-highlight-grid">
+                            <div class="elas-info">
+                                <ul class="card-features">
+                                    <li><i class="fa-solid fa-check text-rose"></i> Ortodontia & Reabilitação Integral</li>
+                                    <li><i class="fa-solid fa-check text-rose"></i> Mentorias e Liderança Feminina</li>
+                                    <li><i class="fa-solid fa-check text-rose"></i> Estética e Visão Multidisciplinar</li>
+                                </ul>
+                            </div>
+                            <div class="elas-docentes-preview">
+                                <div class="preview-avatars">
+                                    <div class="avatar-img-wrapper"><img src="assets/fotos curso/ex2022.jpg" alt="Docente 1" class="avatar-img"></div>
+                                </div>
+                                <span class="preview-text">Corpo docente feminino referência em PB</span>
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn-card-action btn-rose-gold">Conhecer Formação <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Details Overlay / Expanded Section (Single Page App Transition) -->
+    <div class="course-overlay-view" id="courseOverlay">
+        <div class="overlay-container">
+            <button class="close-overlay-btn" id="closeOverlayBtn"><i class="fa-solid fa-xmark"></i> Fechar</button>
+            <div class="overlay-scroll-content" id="overlayBody">
+                <!-- Content injected via JS based on selected course -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 3: A Assinatura DentalPress (Autoridade) -->
+    <section id="autoridade" class="autoridade-section">
+        <div class="section-container">
+            <div class="autoridade-grid">
+                <div class="autoridade-info scroll-reveal">
+                    <h2 class="section-title">A Assinatura DentalPress</h2>
+                    <p class="autoridade-text">Há mais de duas décadas definindo o padrão de excelência científica na América Latina. Nossas formações presenciais não oferecem apenas conteúdo técnico de ponta, mas moldam a vanguarda e constroem um ecossistema de alto valor profissional.</p>
+                    <p class="autoridade-text">O presencial na DentalPress é um marco definitivo. Um ambiente desenhado para conexões de altíssimo nível, discussões de casos complexos e networking exclusivo entre os principais formadores de opinião do país.</p>
+                    <a href="#aplicacao" class="btn btn-primary magnetic-btn">Quero fazer parte</a>
+                </div>
+                
+                <div class="stats-grid scroll-reveal">
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="25">+0</div>
+                        <div class="stat-label">Anos de Tradição</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="15000">+0</div>
+                        <div class="stat-label">Alunos Formados</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="50">+0</div>
+                        <div class="stat-label">Professores Referência</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="100">0%</div>
+                        <div class="stat-label">Exclusividade e Rigor</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Corpo Docente (Os Mestres) -->
+    <section id="docentes" class="docentes-section">
+        <div class="section-container">
+            <div class="section-header scroll-reveal">
+                <h2 class="section-title">Os Mestres</h2>
+                <p class="section-subtitle">Corpo docente de relevância nacional e internacional moldando o futuro da Odontologia.</p>
+            </div>
+        </div>
+        
+        <!-- Infinite Scrolling Faculty Carousel -->
+        <div class="carousel-container scroll-reveal">
+            <div class="carousel-track">
+                <!-- Repeated list for seamless infinite loop -->
+                <div class="faculty-card">
+                    <div class="faculty-img-container">
+                        <img src="assets/fotos/docente1.jpg" alt="Prof. Dr. Clássico Orto" class="faculty-img default-avatar">
+                    </div>
+                    <div class="faculty-info">
+                        <h4 class="faculty-name">Prof. Dr. Weber Ursi</h4>
+                        <p class="faculty-specialty">Referência em Ortodontia</p>
+                    </div>
+                </div>
+                <div class="faculty-card">
+                    <div class="faculty-img-container">
+                        <img src="assets/fotos/docente2.jpg" alt="Profa. Dra. Inovação" class="faculty-img default-avatar-rose">
+                    </div>
+                    <div class="faculty-info">
+                        <h4 class="faculty-name">Profa. Dra. Daniela Garib</h4>
+                        <p class="faculty-specialty">Ortodontia e DTM</p>
+                    </div>
+                </div>
+                <div class="faculty-card">
+                    <div class="faculty-img-container">
+                        <img src="assets/fotos/docente3.jpg" alt="Prof. Dr. Tecnologia" class="faculty-img default-avatar">
+                    </div>
+                    <div class="faculty-info">
+                        <h4 class="faculty-name">Prof. Dr. Laurindo Furquim</h4>
+                        <p class="faculty-specialty">Biomecânica & Estética</p>
+                    </div>
+                </div>
+                <div class="faculty-card">
+                    <div class="faculty-img-container">
+                        <img src="assets/fotos/docente4.jpg" alt="Profa. Dra. Elas" class="faculty-img default-avatar-rose">
+                    </div>
+                    <div class="faculty-info">
+                        <h4 class="faculty-name">Profa. Dra. Marise de Castro</h4>
+                        <p class="faculty-specialty">Alinhadores e Fluxo Digital</p>
+                    </div>
+                </div>
+                <!-- Duplicate cards for animation loop -->
+                <div class="faculty-card">
+                    <div class="faculty-img-container">
+                        <img src="assets/fotos/docente1.jpg" alt="Prof. Dr. Clássico Orto" class="faculty-img default-avatar">
+                    </div>
+                    <div class="faculty-info">
+                        <h4 class="faculty-name">Prof. Dr. Weber Ursi</h4>
+                        <p class="faculty-specialty">Referência em Ortodontia</p>
+                    </div>
+                </div>
+                <div class="faculty-card">
+                    <div class="faculty-img-container">
+                        <img src="assets/fotos/docente2.jpg" alt="Profa. Dra. Inovação" class="faculty-img default-avatar-rose">
+                    </div>
+                    <div class="faculty-info">
+                        <h4 class="faculty-name">Profa. Dra. Daniela Garib</h4>
+                        <p class="faculty-specialty">Ortodontia e DTM</p>
+                    </div>
+                </div>
+                <div class="faculty-card">
+                    <div class="faculty-img-container">
+                        <img src="assets/fotos/docente3.jpg" alt="Prof. Dr. Tecnologia" class="faculty-img default-avatar">
+                    </div>
+                    <div class="faculty-info">
+                        <h4 class="faculty-name">Prof. Dr. Laurindo Furquim</h4>
+                        <p class="faculty-specialty">Biomecânica & Estética</p>
+                    </div>
+                </div>
+                <div class="faculty-card">
+                    <div class="faculty-img-container">
+                        <img src="assets/fotos/docente4.jpg" alt="Profa. Dra. Elas" class="faculty-img default-avatar-rose">
+                    </div>
+                    <div class="faculty-info">
+                        <h4 class="faculty-name">Profa. Dra. Marise de Castro</h4>
+                        <p class="faculty-specialty">Alinhadores e Fluxo Digital</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Social Proof (A Prova) -->
+    <section id="depoimentos" class="depoimentos-section">
+        <div class="section-container">
+            <div class="section-header scroll-reveal">
+                <h2 class="section-title">A Transformação Real</h2>
+                <p class="section-subtitle">Veja o depoimento de quem vivenciou a odontologia no mais alto nível de exigência.</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card scroll-reveal">
+                    <div class="video-placeholder">
+                        <div class="video-overlay-play"><i class="fa-solid fa-play"></i></div>
+                        <div class="testimonial-author-tag">Dra. Camila Nogueira, Ortodontista</div>
+                        <!-- We can overlay background or simple canvas animation -->
+                        <div class="reels-bg"></div>
+                    </div>
+                    <div class="testimonial-feedback">
+                        <p class="feedback-quote">"O ecossistema Excelência não apenas aprimorou minha técnica com os alinhadores, mas reposicionou minha marca profissional no mercado premium."</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card scroll-reveal">
+                    <div class="video-placeholder">
+                        <div class="video-overlay-play"><i class="fa-solid fa-play"></i></div>
+                        <div class="testimonial-author-tag">Dr. Ricardo Vasconcelos, Clinico Geral</div>
+                        <div class="reels-bg"></div>
+                    </div>
+                    <div class="testimonial-feedback">
+                        <p class="feedback-quote">"A troca de experiências presenciais em Maringá é indescritível. O network gerado vale cada quilômetro percorrido."</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card scroll-reveal">
+                    <div class="video-placeholder">
+                        <div class="video-overlay-play"><i class="fa-solid fa-play"></i></div>
+                        <div class="testimonial-author-tag">Dra. Letícia Mello, Especialista DTM</div>
+                        <div class="reels-bg"></div>
+                    </div>
+                    <div class="testimonial-feedback">
+                        <p class="feedback-quote">"Participar do 'Excelência Com Elas' abriu meus horizontes sobre liderança clínica e integração multidisciplinar avançada."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Rodapé Global e Captura (Aplicação) -->
+    <section id="aplicacao" class="aplicacao-section">
+        <div class="section-container">
+            <div class="aplicacao-grid">
+                <div class="aplicacao-text scroll-reveal">
+                    <span class="gold-subtitle">PROCESSO SELETIVO EXCLUSIVO</span>
+                    <h2 class="section-title">Seja Membro do Próximo Ciclo</h2>
+                    <p class="aplicacao-desc">Vagas limitadas para garantir o rigor científico e o nível de networking. Envie sua candidatura para o comitê de seleção da DentalPress.</p>
+                    <div class="info-items">
+                        <div class="info-item">
+                            <i class="fa-solid fa-location-dot gold-icon"></i>
+                            <div>
+                                <h5>Sede DentalPress</h5>
+                                <p>Maringá - PR, Brasil</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-user-shield gold-icon"></i>
+                            <div>
+                                <h5>Processo Restrito</h5>
+                                <p>Seleção por análise de currículo e perfil profissional</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="aplicacao-form-container scroll-reveal">
+                    <form class="luxury-form" id="applicationForm">
+                        <div class="form-header">
+                            <h4>Formulário de Candidatura</h4>
+                            <p>Preencha os dados e selecione a formação desejada</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" required placeholder="Ex: Dra. Juliana Silva">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail Profissional</label>
+                            <input type="email" id="email" required placeholder="seuemail@exemplo.com.br">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">WhatsApp / Telefone</label>
+                            <input type="tel" id="phone" required placeholder="(11) 99999-9999">
+                        </div>
+                        <div class="form-group">
+                            <label for="cro">Inscrição no CRO</label>
+                            <input type="text" id="cro" required placeholder="Ex: CRO-SP 12345">
+                        </div>
+                        <div class="form-group">
+                            <label for="course-select">Formação de Interesse</label>
+                            <select id="course-select" required>
+                                <option value="" disabled selected>Selecione o programa...</option>
+                                <option value="orto">Excelência na Orto (Clássico)</option>
+                                <option value="dtm">Excelência em DTM e Alinhadores (Tecnologia)</option>
+                                <option value="elas">Excelência Com Elas (Inovação & Multidisciplinar)</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit-luxury magnetic-btn">Submeter Candidatura <i class="fa-solid fa-chevron-right"></i></button>
+                    </form>
+                    <div class="form-success-message" id="formSuccess">
+                        <i class="fa-solid fa-circle-check success-icon"></i>
+                        <h4>Candidatura Recebida</h4>
+                        <p>Nossa equipe premium de admissão entrará em contato via WhatsApp nas próximas 24 horas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-global">
+        <div class="section-container">
+            <div class="footer-top">
+                <img src="assets/logo/DentalPressNewLogoBlancMini.png" alt="DentalPress Logo" class="footer-logo">
+                <div class="footer-socials">
+                    <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 DentalPress Ensino e Pesquisa Ltda. Todos os direitos reservados.</p>
+                <div class="footer-policies">
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Política de Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Core Javascript -->
+    <script src="main.js"></script>
+</body>
+</html>
