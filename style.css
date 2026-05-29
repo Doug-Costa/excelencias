@@ -613,55 +613,73 @@ body.cursor-hover .custom-cursor-follower {
     transform: translateX(5px);
 }
 
-/* Card 1 & Card 2 layout */
+/* Bento Cards Header Images */
+.card-image-top {
+    position: relative;
+    width: calc(100% + 6rem);
+    margin-top: -3rem;
+    margin-left: -3rem;
+    margin-bottom: 2rem;
+    height: 180px;
+    overflow: hidden;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.card-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-smooth);
+}
+
+.bento-card:hover .card-thumb {
+    transform: scale(1.05);
+}
+
+/* Card layout (4 cards grid setup: 6 columns span for 1, 2, 4 and 12 columns for featured 3) */
 .card-orto {
     grid-column: span 6;
 }
 
-.card-orto .card-bg-overlay {
-    background-image: linear-gradient(rgba(11, 12, 16, 0.8), rgba(11, 12, 16, 0.4)), url('assets/fotos curso/ex2022.jpg');
+.card-alinhadores {
+    grid-column: span 6;
+}
+
+.card-alinhadores .card-tag {
+    color: var(--color-ice-blue);
+}
+
+.card-alinhadores .card-features li i {
+    color: var(--color-blue-accent);
+}
+
+.card-alinhadores:hover {
+    border-color: var(--color-blue-glow);
+    box-shadow: 0 20px 40px var(--color-blue-glow);
 }
 
 .card-dtm {
     grid-column: span 6;
 }
 
-.card-dtm .card-bg-overlay {
-    background-image: linear-gradient(rgba(11, 12, 16, 0.8), rgba(11, 12, 16, 0.4)), url('assets/fotos curso/ex2022.jpg');
-}
-
 .card-dtm .card-tag {
-    color: var(--color-ice-blue);
-}
-
-.card-dtm .card-features li i {
-    color: var(--color-blue-accent);
+    color: var(--color-gold);
 }
 
 .card-dtm:hover {
-    border-color: var(--color-blue-glow);
-    box-shadow: 0 20px 40px var(--color-blue-glow);
+    border-color: var(--color-gold-glow);
+    box-shadow: 0 20px 40px var(--color-gold-glow);
 }
 
 /* Card 3: Large featured card (Excelência Com Elas) */
 .card-elas {
-    grid-column: span 12;
-    min-height: 420px;
+    grid-column: span 6;
     border-color: rgba(183, 110, 121, 0.2);
-}
-
-.card-elas .card-bg-overlay {
-    background-image: linear-gradient(rgba(11, 12, 16, 0.9), rgba(11, 12, 16, 0.3)), url('assets/fotos curso/ex2022.jpg');
-    opacity: 0.1;
 }
 
 .card-elas:hover {
     border-color: var(--color-rose-gold);
     box-shadow: 0 20px 40px var(--color-rose-gold-glow);
-}
-
-.card-elas:hover .card-bg-overlay {
-    opacity: 0.25;
 }
 
 .elas-highlight-grid {

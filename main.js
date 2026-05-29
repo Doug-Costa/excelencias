@@ -166,17 +166,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 'Fóruns de debate de casos clínicos e mentoria direta com os professores.'
             ]
         },
-        dtm: {
+        alinhadores: {
             tag: 'TECNOLOGIA - O FUTURO DIGITAL',
-            title: 'Excelência em DTM e Alinhadores',
-            desc: 'Aprenda do planejamento tridimensional digital ao design de fluxos de trabalho avançados no tratamento com alinhadores invisíveis e DTM.',
+            title: 'Excelência em Alinhadores',
+            desc: 'Domine a Ortodontia Digital. Aprenda a planejar setups 3D, entender a biomecânica de plásticos termoformados e gerenciar fluxos digitais de ponta em consultório.',
             duration: '12 meses (Encontros modulares híbridos)',
             level: 'Avançado / Master',
-            focus: 'Fluxo 3D digital, setup e modelagem de alinhadores, placas oclusais.',
+            focus: 'Fluxo 3D digital, setup e modelagem de alinhadores, biomecânica com attachments.',
             highlights: [
                 'Uso intensivo de scanners intraorais de última geração.',
-                'Análise de softwares CAD de planejamento e biomecânica com alinhadores.',
-                'Integração total do tratamento de oclusão e disfunção articular.'
+                'Análise de softwares CAD de planejamento e biomecânica.',
+                'Integração de alinhadores modernos na prática diária.'
             ]
         },
         elas: {
@@ -190,6 +190,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 'Conexão única e mentoria com as maiores expoentes femininas da odontologia.',
                 'Foco em experiência do paciente, gestão humanizada e alto ticket.',
                 'Ambiente intimista planejado para alta performance profissional.'
+            ]
+        },
+        dtm: {
+            tag: 'DISFUNÇÃO ARTICULAR - SAÚDE E PRECISÃO',
+            title: 'Excelência em DTM',
+            desc: 'Foco aprofundado no diagnóstico de desordens temporomandibulares, controle da dor orofacial e tratamento clínico integrado da articulação temporomandibular.',
+            duration: '12 meses (Encontros presenciais)',
+            level: 'Especialização Avançada',
+            focus: 'Dores de cabeça tensionais, placas oclusais, anatomia da ATM, farmacologia.',
+            highlights: [
+                'Abordagem baseada nas diretrizes científicas mais atuais de dor orofacial.',
+                'Confecção prática de placas miorrelaxantes e acompanhamento de pacientes reais.',
+                'Diagnóstico diferencial complexo de dores crônicas cefálicas.'
             ]
         }
     };
